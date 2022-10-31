@@ -1,0 +1,76 @@
+body{
+  width: 100%;
+  background-image: url('assets/clima-background.jpeg');
+  background-size: cover;
+  overflow: hidden;
+}
+
+.container-weather{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card-weather{
+  background-color: #d1d1d1;
+  opacity: .75;
+  border-radius: 25px;
+  width: fit-content;
+  height: fit-content;
+  padding: 20px;
+}
+
+.card-data{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.title-weather {
+  text-transform: capitalize;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.celsius-fahrenheit{
+  font-weight: bold;
+}
+
+button{
+  background-color: blueviolet;
+  border: 1px solid blueviolet;
+  cursor: pointer;
+  border-radius: 25px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+button:hover{
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+}
+
+button:active{
+  box-shadow: 0px 0px 2.5px 0px rgba(0,0,0,0.75);
+}
+
+.card-features{
+  text-align: justify;
+}
+
+img{
+  width: 175px;
+}
+
+@media screen and (max-width:354px){
+  *{
+    font-size: 12px;
+  }
+  img{
+    width: 110px;
+  }
+}
